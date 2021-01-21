@@ -41,7 +41,7 @@ module.exports = (_env,argv)=> {
       build:true
     }
   }
-
+  
   let entry = {}
 
   // edit webpack plugins here!
@@ -67,6 +67,13 @@ module.exports = (_env,argv)=> {
   let config={
     //entry points for webpack- remove if not used/needed
     entry,
+    // : {
+      // app: [
+      //   'react-app-polyfill/ie9', // Only if you want to support IE 9
+      //   'react-app-polyfill/stable',
+      //   // './src/index.jsx',
+      // ],
+    // },
     optimization: {
       minimize: false, // this setting is default to false to pass review more easily. you can opt to set this to true to compress the bundles, but also expect an email from the review team to get the full source otherwise. 
     },
